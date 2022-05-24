@@ -1,8 +1,8 @@
 # FPGA-CPU-Design
-Designed A CPU using ALTERA FPGA using Verilog HDL.
+# Designed A CPU using ALTERA FPGA using Verilog HDL.
 # This are the Full Instruction set of my CPU.
 ![CPU Instructions](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Instructions.png)
-This CPU is based on harvard architecture, so there is two types of memory one is program memory and another one is data memory.
+# This CPU is based on harvard architecture, so there is two types of memory one is program memory and another one is data memory.
 # This is the picture of the program and data memory.
 ![Memory](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Memorys.JPG)
 # This are some instructions written by the user.
