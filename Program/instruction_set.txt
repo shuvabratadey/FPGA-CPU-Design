@@ -1,0 +1,10 @@
+MVI 02
+ADI 28
+ORI 3F
+ADD 00 ==> 1
+JMP 08
+
+
+ANI 00
+ORI 3F
+HLT
