@@ -9,8 +9,15 @@
 
 ![ASM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG)
 
-# After converting this code to binary and put in the program memory of my cpu, It will start to execute.
+# After converting this code to binary and put it into the EEPROM.
+![EEPROM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/EEPROM.jpg)
+#It will start to execute.
+# YouTube Link:- https://youtu.be/it-jdhMR7sY
 # This is the Picture of the FPGA Board while it Executing this instructions.
 ![CPU 1](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/FPGA_1.jpg)
 ![CPU 2](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/FPGA_2.jpg)
+# Data Port and Flah Registers.
+![LED_Display](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/LED_Display.jpg)
+#This is the Full Circuit.
+![Full_Circuit](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/Full_Board.jpg)
 # [Please see the codes for better understanding.](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/CPU_Design.v)
