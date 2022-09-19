@@ -1,13 +1,13 @@
 # FPGA-CPU-Design
 # Designed A CPU using ALTERA FPGA using Verilog HDL.
 # This are the Full Instruction set of my CPU.
-![Full_Instruction](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/instruction_set.txt)
+# [Full_Instruction](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/instruction_set.txt)
 # This CPU is based on harvard architecture, so there is two types of memory one is program memory and another one is data memory.
 # This is the picture of the program and data memory.
-![Memory](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Memorys.JPG)
+# [Memory](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Memorys.JPG)
 # This are some instructions written by the user.
 
-![ASM]([https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
+# [ASM]([https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
 
 # After converting this code to binary and put it into the EEPROM.
 ![EEPROM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/EEPROM.jpg)
