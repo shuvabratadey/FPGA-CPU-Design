@@ -7,7 +7,7 @@
 ![Memory](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Memorys.JPG)
 # This are some instructions written by the user.
 
-# [ASM]([https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
+# [ASM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
 
 # After converting this code to binary and put it into the EEPROM.
 ![EEPROM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/EEPROM.jpg)
