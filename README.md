@@ -7,7 +7,7 @@
 # [Click Here to See the Full ASM Code](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
 # After converting this code to binary and put it into the EEPROM.
 ![EEPROM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/EEPROM.jpg)
-#It will start to execute.
+# It will start to execute.
 # YouTube Link:- https://youtu.be/it-jdhMR7sY
 # This is the Picture of the FPGA Board while it Executing this instructions.
 ![CPU 1](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/FPGA_1.jpg)
