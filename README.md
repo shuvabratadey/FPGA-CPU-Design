@@ -3,7 +3,7 @@
 ![Full Instruction Set](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Instruction_Set.JPG)
 # [Click Here to See the Full Instruction Set](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/instruction_set.txt)
 # This are some instructions written by the user.
-# [User_Code](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG)
+![User_Code](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/ASM_Code.JPG)
 # [Click Here to See the Full ASM Code](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/Program_asm.txt)
 # After converting this code to binary and put it into the EEPROM.
 ![EEPROM](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/EEPROM.jpg)
