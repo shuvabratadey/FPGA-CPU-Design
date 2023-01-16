@@ -1,4 +1,6 @@
 # Designed A CPU using ALTERA FPGA & Verilog HDL.
+# This is the Architecture.
+![Architecture](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Architecture%20of%208%20bit%20CPU%20(%20Von-Neumann)%20.jpg)
 # This are the Full Instruction set of my CPU.
 ![Full Instruction Set](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Pictures/Instruction_Set.JPG)
 # [Click Here to See the Full Instruction Set](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/instruction_set.txt)
