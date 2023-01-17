@@ -53,6 +53,13 @@
 `define MVI_C 8'b00110110
 `define PUSH 8'b00110111
 `define POP 8'b00111000
+`define NOP 8'b00111001
+`define XCH_A_B 8'b00111010
+`define XCH_A_C 8'b00111011
+`define XCH_B_C 8'b00111100
+`define XCHD_A 8'b00111101
+`define XCHD_B 8'b00111110
+`define XCHD_C 8'b00111111
 `define HLT 8'b11111111
 //###########################################
 
@@ -640,11 +647,47 @@ begin
 			end
 			`PUSH:	
 			begin
-				// No Code.
+				Stack_mem[SP] = A;
+				SP = SP - 1'b1;
 			end
 			`POP:	
 			begin
-				// No Code.
+				SP = SP + 1'b1;
+				A = Stack_mem[SP];
+			end
+			`NOP:	
+			begin
+				// No Operation
+			end
+			`XCH_A_B:
+			begin
+				Stack_mem[SP] = A;
+				A = B;
+				B = Stack_mem[SP];
+			end
+			`XCH_A_C:
+			begin
+				Stack_mem[SP] = A;
+				A = C;
+				C = Stack_mem[SP];
+			end
+			`XCH_B_C:
+			begin
+				Stack_mem[SP] = B;
+				B = C;
+				C = Stack_mem[SP];
+			end
+			`XCHD_A:
+			begin
+				A = {A[3:0], A[7:4]};
+			end
+			`XCHD_B:
+			begin
+				B = {B[3:0], B[7:4]};
+			end
+			`XCHD_C:
+			begin
+				C = {C[3:0], C[7:4]};
 			end
 			endcase
 		end
