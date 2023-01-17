@@ -56,5 +56,12 @@ MVI_B  | 00110101 | MOV B immediate
 MVI_C  | 00110110 | MOV C immediate
 PUSH   | 00110111 | PUSH Stack_Pointer
 POP    | 00111000 | POP Stack_Pointer
+NOP    | 00111001 | No Operation
+XCH_A_B| 00111010 | Exchange Data Between A and B
+XCH_A_C| 00111011 | Exchange Data Between A and C
+XCH_B_B| 00111100 | Exchange Data Between B and C
+XCHD_A | 00111101 | Nibble Swapping of Reg A
+XCHD_B | 00111110 | Nibble Swapping of Reg B
+XCHD_C | 00111111 | Nibble Swapping of Reg C
 HLT    | 11111111 | Halt CPU
 ---------------------------------------------------------------
