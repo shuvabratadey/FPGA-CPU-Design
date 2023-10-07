@@ -19,4 +19,8 @@
 ![Full_Circuit](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/FPGA%20EEPROM/Full_Board.jpg)
 # [Please see the codes for better understanding.](https://github.com/shuvabratadey/FPGA-CPU-Design/blob/main/Program/CPU_Design.v)
 
+
+https://github.com/shuvabratadey/FPGA-CPU-Design/assets/20286896/8216a96e-d70c-4e75-8fc6-9356e11e7fb1
+
+
 # YouTube Link:- https://youtu.be/it-jdhMR7sY
