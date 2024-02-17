@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EEPROM
-Wed Feb 14 20:12:35 2024
+Sat Feb 17 18:48:57 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,15 +44,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 14 20:12:35 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sat Feb 17 18:48:57 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; EEPROM                                          ;
 ; Top-level Entity Name              ; EEPROM                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 135                                             ;
-;     Total combinational functions  ; 135                                             ;
-;     Dedicated logic registers      ; 63                                              ;
-; Total registers                    ; 63                                              ;
+; Total logic elements               ; 157                                             ;
+;     Total combinational functions  ; 157                                             ;
+;     Dedicated logic registers      ; 72                                              ;
+; Total registers                    ; 72                                              ;
 ; Total pins                         ; 25                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -172,28 +172,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 135   ;
+; Estimated Total logic elements              ; 157   ;
 ;                                             ;       ;
-; Total combinational functions               ; 135   ;
+; Total combinational functions               ; 157   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 30    ;
-;     -- 3 input functions                    ; 49    ;
-;     -- <=2 input functions                  ; 56    ;
+;     -- 4 input functions                    ; 88    ;
+;     -- 3 input functions                    ; 61    ;
+;     -- <=2 input functions                  ; 8     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 56    ;
-;     -- arithmetic mode                      ; 79    ;
+;     -- normal mode                          ; 100   ;
+;     -- arithmetic mode                      ; 57    ;
 ;                                             ;       ;
-; Total registers                             ; 63    ;
-;     -- Dedicated logic registers            ; 63    ;
+; Total registers                             ; 72    ;
+;     -- Dedicated logic registers            ; 72    ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
 ; I/O pins                                    ; 25    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 63    ;
-; Total fan-out                               ; 698   ;
-; Average fan-out                             ; 3.13  ;
+; Maximum fan-out node                        ; reset ;
+; Maximum fan-out                             ; 79    ;
+; Total fan-out                               ; 725   ;
+; Average fan-out                             ; 2.85  ;
 +---------------------------------------------+-------+
 
 
@@ -202,7 +202,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |EEPROM                    ; 135 (135)         ; 63 (63)      ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |EEPROM             ; work         ;
+; |EEPROM                    ; 157 (157)         ; 72 (72)      ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |EEPROM             ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,8 +228,9 @@ Encoding Type:  One-Hot
 ; sel~9                                 ; Lost fanout                            ;
 ; sel~10                                ; Lost fanout                            ;
 ; sel~11                                ; Lost fanout                            ;
+; OE~reg0                               ; Stuck at GND due to stuck port data_in ;
 ; sel.000101                            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 4 ;                                        ;
+; Total Number of Removed Registers = 5 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -238,12 +239,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 63    ;
-; Number of registers using Synchronous Clear  ; 51    ;
-; Number of registers using Synchronous Load   ; 32    ;
+; Total registers                              ; 72    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 59    ;
+; Number of registers using Clock Enable       ; 8     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -253,11 +254,12 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |EEPROM|data[7]~reg0       ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |EEPROM|select[0]          ;
-; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; Yes        ; |EEPROM|count1[17]         ;
-; 6:1                ; 13 bits   ; 52 LEs        ; 13 LEs               ; 39 LEs                 ; Yes        ; |EEPROM|address[11]~reg0   ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |EEPROM|Selector53         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |EEPROM|data[0]~reg0       ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |EEPROM|address[0]~reg0    ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |EEPROM|select[3]          ;
+; 5:1                ; 41 bits   ; 123 LEs       ; 82 LEs               ; 41 LEs                 ; Yes        ; |EEPROM|count[15]          ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |EEPROM|Selector41         ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |EEPROM|Selector44         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -276,14 +278,13 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 14 20:12:34 2024
+    Info: Processing started: Sat Feb 17 18:48:56 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EEPROM -c EEPROM
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file eeprom.v
     Info (12023): Found entity 1: EEPROM
 Info (12127): Elaborating entity "EEPROM" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at EEPROM.v(23): object "count2" assigned a value but never read
-Warning (10850): Verilog HDL warning at EEPROM.v(38): number of words (8192) in memory file does not match the number of elements in the address range [0:63]
+Warning (10850): Verilog HDL warning at EEPROM.v(36): number of words (8192) in memory file does not match the number of elements in the address range [0:63]
 Warning (10030): Net "data_mem.data_a" at EEPROM.v(20) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "data_mem.waddr_a" at EEPROM.v(20) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "data_mem.we_a" at EEPROM.v(20) has no driver or initial value, using a default initial value '0'
@@ -294,13 +295,13 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 23 output pins
-    Info (21061): Implemented 135 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info (21061): Implemented 157 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 4586 megabytes
-    Info: Processing ended: Wed Feb 14 20:12:35 2024
+    Info: Processing ended: Sat Feb 17 18:48:57 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
