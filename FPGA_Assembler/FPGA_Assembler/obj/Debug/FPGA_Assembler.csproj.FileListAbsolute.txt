@@ -1,0 +1,9 @@
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\bin\Debug\FPGA_Assembler.exe.config
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\bin\Debug\FPGA_Assembler.exe
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\bin\Debug\FPGA_Assembler.pdb
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.csprojResolveAssemblyReference.cache
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.Form1.resources
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.Properties.Resources.resources
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.csproj.GenerateResource.Cache
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.exe
+c:\users\shuva\onedrive\documents\visual studio 2012\Projects\FPGA_Assembler\FPGA_Assembler\obj\Debug\FPGA_Assembler.pdb

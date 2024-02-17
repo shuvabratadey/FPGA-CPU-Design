@@ -1,0 +1,27 @@
+module EEPROM(clk, address, data);
+
+input clk;
+output reg [12:0] address;
+output reg [7:0] data;
+
+reg [7:0] prog_mem [63:0];	// Program memory
+
+integer count = 0;
+
+initial
+begin
+(* ram_init_file = "ProgMem.txt" *)
+$readmemb("ProgMem.txt", prog_mem);
+end
+
+always @(posedge clk)
+begin
+	count = count + 1'b1;
+	if(count > 50000000)
+	begin
+		count = 0;
+		
+	end
+end
+
+endmodule

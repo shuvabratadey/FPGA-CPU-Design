@@ -1,0 +1,7 @@
+
+State Machine - |EEPROM|sel
+Name sel.000001 sel.000101 sel.000011 sel.000000 
+sel.000000 0 0 0 0 
+sel.000001 1 0 0 1 
+sel.000011 0 0 1 1 
+sel.000101 0 1 0 1 
