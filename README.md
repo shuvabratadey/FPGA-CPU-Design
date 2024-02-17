@@ -28,5 +28,6 @@ https://github.com/shuvabratadey/FPGA-CPU-Design/assets/20286896/8216a96e-d70c-4
 
 https://github.com/shuvabratadey/FPGA-CPU-Design/assets/20286896/015e6f93-e187-4b09-b2a4-97928fa5ee99
 
+# YouTube Link 1:- https://youtu.be/it-jdhMR7sY
 
-# YouTube Link:- https://youtu.be/it-jdhMR7sY
+# YouTube Link 2:- https://youtu.be/HtTpL_h6FhE
