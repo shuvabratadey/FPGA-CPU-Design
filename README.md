@@ -7,10 +7,10 @@
 # These are some instructions written by the user.
 ![User_Code](Pictures/ASM_Code.JPG)
 # [Click Here to See the Full ASM Code](Program/Program_asm.txt)
-# The user must utilize this software [FPGA_Assembler.exe](FPGA_Assembler\FPGA_Assembler\bin\Debug\FPGA_Assembler.exe), created in Visual Studio 2012, in order to compile these instructions.
+# The user must utilize this software [FPGA_Assembler.exe](FPGA_Assembler/FPGA_Assembler/bin/Debug/FPGA_Assembler.exe), created in Visual Studio 2012, in order to compile these instructions.
 ![FPGA_Assembler](Pictures/FPGA_Assembler.jpg)
 # After converting this code to binary and put it into the EEPROM.
-# User can use this [verilog code](EEPROM\EEPROM.v) to program the EEPROM Chip using FPGA.
+# User can use this [verilog code](EEPROM/EEPROM.v) to program the EEPROM Chip using FPGA.
 ![EEPROM](FPGA%20EEPROM/EEPROM.jpg)
 # Connect this EEPROM chip to the FPGA after uploading the [verilog code](Program/CPU_Design.v) to the FPGA.
 ![EEPROM_Connected_to_FPGA](Pictures/EEPROM_Connected_to_FPGA.jpg)
