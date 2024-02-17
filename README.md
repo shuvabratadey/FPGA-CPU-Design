@@ -22,6 +22,7 @@
 ![LED_Display](FPGA%20EEPROM/LED_Display.jpg)
 # This is the Full Circuit Configuration.
 ![Full_Circuit](FPGA%20EEPROM/Full_Board.jpg)
+![Full_Circuit 2](Pictures/Full_Diagram.jpg)
 
 
 https://github.com/shuvabratadey/FPGA-CPU-Design/assets/20286896/8216a96e-d70c-4e75-8fc6-9356e11e7fb1
